@@ -11,12 +11,14 @@ body {
 }
 
 .container {
-    padding: 10px;
+    padding: 40px;
     background-color: white;
     width: 100%;
     min-height: 1000px;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
+    
 }
 
 .sidebar {
@@ -97,7 +99,7 @@ cursor: pointer;
     transition: 0.5s;
     transform: scale(0.7);
     transform-origin: top;
-
+    
 
 }
 .product :hover img{
