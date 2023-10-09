@@ -1,0 +1,124 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: grey;
+
+}
+
+.container {
+    padding: 10px;
+    background-color: white;
+    width: 100%;
+    min-height: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: lightgray;
+    padding: 10px;
+}
+.logo{
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: green;
+    text-transform: uppercase;
+
+}
+.sidebar input{
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.sidebar h3{
+    margin-bottom: 8px;
+    font-weight: bolder;
+    color: blue;
+}
+.sidebar ul{
+list-style: none;
+}
+.sidebar li{
+    padding: 5px;
+    cursor: pointer;
+}
+li:hover{
+    background-color: white;
+}
+.sidebar h4{
+    margin-top: 8px;
+}
+.price{
+    position: relative;
+}
+.price .priceValue{
+ position: absolute;
+ bottom: 15px;   
+}
+
+.content {
+    flex: 4;
+}
+
+.products{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+padding: 10px;
+gap: 8px;
+cursor: pointer;
+
+}
+.product{
+    width: 200px;
+    /* height: 200px; */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+.product .img{
+    flex: 1;
+}
+.product .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.5s;
+    transform: scale(0.7);
+    transform-origin: top;
+
+
+}
+.product :hover img{
+    transform: scale(1);
+} 
+
+
+.product .product-details{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-details span:nth-child(1){
+    color: red;
+}
+.product-details span:nth-child(2){
+    color: blue;
+}
+.product-details span:nth-child(3){
+    background-color: green;
+    color: white;
+}
